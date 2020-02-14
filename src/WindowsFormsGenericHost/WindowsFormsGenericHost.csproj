@@ -1,6 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
+    <PackageId>WindowsFormsGenericHost</PackageId>
+    <Title>Windows Forms Generic Host</Title>
+    <Description>Adds Windows Forms support to the .NET Generic Host.</Description>
+    <Authors>Matthew King</Authors>
+    <Copyright>Copyright Matthew King.</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/MatthewKing/WindowsFormsGenericHost</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MatthewKing/WindowsFormsGenericHost</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>winforms windows forms generic host lifetime hosting</PackageTags>
+    <VersionPrefix>0.1.0</VersionPrefix>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <TargetFrameworks>net472;netcoreapp3.0</TargetFrameworks>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
