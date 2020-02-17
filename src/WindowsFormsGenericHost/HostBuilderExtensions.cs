@@ -13,6 +13,11 @@ namespace WindowsFormsGenericHost
             Action<WindowsFormsLifetimeOptions> configureLifetime = null)
             where TForm : Form
         {
+            if (hostBuilder == null)
+            {
+                throw new ArgumentNullException(nameof(hostBuilder));
+            }
+
             return hostBuilder.ConfigureServices((context, services) =>
             {
                 services.AddSingleton<ApplicationContext>(c => new ApplicationContext(c.GetRequiredService<TForm>()));
@@ -39,6 +44,11 @@ namespace WindowsFormsGenericHost
             Action<WindowsFormsLifetimeOptions> configureLifetime = null)
             where TApplicationContext : ApplicationContext
         {
+            if (hostBuilder == null)
+            {
+                throw new ArgumentNullException(nameof(hostBuilder));
+            }
+
             return hostBuilder.ConfigureServices((context, services) =>
             {
                 services.AddSingleton<ApplicationContext, TApplicationContext>();
