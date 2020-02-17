@@ -2,7 +2,7 @@
 
 WindowsFormsGenericHost is a simple library that allows you to use the [.NET Generic Host](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/host/generic-host) model with Windows Forms applications, on both .NET Core and .NET Framework.
 
-# Quickstart
+## Quickstart
 
 Set up your `Program.cs` in a similar manner to this:
 
@@ -28,7 +28,11 @@ static class Program
 }
 ```
 
-# Installation
+## More examples
+
+Check out the [samples](/samples)
+
+## Installation
 
 Just grab it from [NuGet](https://www.nuget.org/packages/WindowsFormsGenericHost/)
 
@@ -40,7 +44,7 @@ PM> Install-Package WindowsFormsGenericHost
 $ dotnet add package WindowsFormsGenericHost
 ```
 
-# License and copyright
+## License and copyright
 
 Copyright Matthew King.
 Distributed under the [MIT License](http://opensource.org/licenses/MIT).
