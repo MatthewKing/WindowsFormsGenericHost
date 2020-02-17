@@ -17,7 +17,7 @@ namespace WindowsFormsGenericHost.Demo
 
         private static void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<MainForm>();
+            services.AddForms();
         }
     }
 }

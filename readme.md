@@ -21,7 +21,7 @@ static class Program
 
     private static void ConfigureServices(IServiceCollection services)
     {
-        services.AddSingleton<MainForm>();
+        services.AddForms();
 
         services.AddYourOtherServicesHere();
     }
