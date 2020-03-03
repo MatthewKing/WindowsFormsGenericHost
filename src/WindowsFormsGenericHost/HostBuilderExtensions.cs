@@ -23,7 +23,7 @@ namespace WindowsFormsGenericHost
                 services.AddSingleton<ApplicationContext>(c => new ApplicationContext(c.GetRequiredService<TForm>()));
 
                 services.AddSingleton<IHostLifetime, WindowsFormsLifetime>();
-                
+
                 services.AddHostedService<WindowsFormsApplicationHostedService>();
 
                 if (configureApplication != null)
@@ -54,7 +54,7 @@ namespace WindowsFormsGenericHost
                 services.AddSingleton<ApplicationContext, TApplicationContext>();
 
                 services.AddSingleton<IHostLifetime, WindowsFormsLifetime>();
-                
+
                 services.AddHostedService<WindowsFormsApplicationHostedService>();
 
                 if (configureApplication != null)

@@ -90,7 +90,6 @@ namespace WindowsFormsGenericHost
             System.Environment.ExitCode = 0;
         }
 
-
         public Task StopAsync(CancellationToken cancellationToken)
         {
             return Task.CompletedTask;
