@@ -11,7 +11,7 @@
     <RepositoryUrl>https://github.com/MatthewKing/WindowsFormsGenericHost</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>winforms windows forms generic host lifetime hosting</PackageTags>
-    <VersionPrefix>0.1.0</VersionPrefix>
+    <VersionPrefix>0.2.0</VersionPrefix>
   </PropertyGroup>
 
   <PropertyGroup>
