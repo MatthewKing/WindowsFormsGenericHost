@@ -4,7 +4,7 @@ namespace WindowsFormsGenericHost
 {
     public class WindowsFormsApplicationOptions
     {
-#if NETCOREAPP
+#if !NETFRAMEWORK
 
         public HighDpiMode HighDpiMode { get; set; }
 #endif
@@ -13,7 +13,7 @@ namespace WindowsFormsGenericHost
 
         public WindowsFormsApplicationOptions()
         {
-#if NETCOREAPP
+#if !NETFRAMEWORK
             HighDpiMode = HighDpiMode.SystemAware;
 #endif
             EnableVisualStyles = true;

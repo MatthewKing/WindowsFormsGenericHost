@@ -30,7 +30,7 @@ namespace WindowsFormsGenericHost
 
         private void UIThreadStart()
         {
-#if NETCOREAPP
+#if !NETFRAMEWORK
             Application.SetHighDpiMode(_options.HighDpiMode);
 #endif
 
